@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="carlos.css">
+  <style>
+    .margin-bottom-carousel {
+      margin-bottom: 50px;
+    }
+
+    .card {
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+    <a class="navbar-brand" href="#">FFF MOTORS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide margin-bottom-carousel" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="imagens/golf_gti.jpg" alt="Primeira imagem carrosel" width="80%" height="30%">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="imagens/BMW_HD.jpg" alt="Segunda imagem" width="80%" height="30%">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="imagens/Fiat-Argo.jpg" alt="Terceira imagem" width="80%" height="30%">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <div class="container margin-bottom-carousel">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="imagens/golf_gti.jpg" class="card-img-top img-fluid" alt="Imagem do veículo">
+          <div class="card-body">
+            <h5 class="card-title">Golf GTI</h5>
+            <p class="card-text">Preço: R$35.000</p>
+            <p class="card-text">Tipo: Hatchback esportivo</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="imagens/Fiat-Argo.jpg" class="card-img-top img-fluid" alt="Imagem do veículo">
+          <div class="card-body">
+            <h5 class="card-title">Fiat Argo</h5>
+            <p class="card-text">Preço: R$20.000</p>
+            <p class="card-text">Tipo: Hatchback compacto</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <img src="imagens/BMW_3.jpeg" class="card-img-top img-fluid" alt="Imagem do veículo">
+          <div class="card-body">
+            <h5 class="card-title">BMW 3 Series</h5>
+            <p class="card-text">Preço: R$40.000</p>
+            <p class="card-text">Tipo: Sedan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
